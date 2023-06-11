@@ -42,7 +42,6 @@ export default function Home() {
     }
 
     const tempSteps = [...steps];
-    // debugger
 
     if (readyToNext) {
       tempSteps[activeStepIndex].status = "done";
@@ -56,7 +55,12 @@ export default function Home() {
     console.log("submit");
   };
 
-  const previousStep = () => {};
+  const previousStep = () => {    
+    const tempSteps = [...steps];
+    tempSteps[activeStepIndex].status = "todo";
+    tempSteps[activeStepIndex - 1].status = "active";
+
+    setSteps(tempSteps)};
 
   console.log(fields);
   console.log(steps);
