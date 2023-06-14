@@ -14,20 +14,20 @@
 <br>
 
 <p align="center" id="-layout">
-  <img alt="profile settings gif" src="./public/form.gif">
+  <img alt="profile settings gif" src="./public/stepForm.gif">
 </p>
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
--   HTML
--   CSS
--   JavaScript
--   React
--   Git e Github
--   Figma
--   Next
+- HTML
+- CSS
+- JavaScript
+- React
+- Git e Github
+- Figma
+- Next
 
 ## 💻 Projeto
 

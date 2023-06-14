@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: var(--base-gray-400);
+}
+
+.input {
+  text-decoration: none;
+  border: 1px solid #e1e1e6;
+  border-radius: 2px;
+  color: var(--base-gray-200);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  width: 528px;
+  height: 56px;
+  padding: 8px 16px;
+}

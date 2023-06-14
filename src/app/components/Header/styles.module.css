@@ -1,11 +1,61 @@
-.done {
-  color: green;
-}
-
-.active {
-  color: purple;
-}
-
 .todo {
-  color: gray;
+  color: var(--base-gray-200);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.numberStepToDo {
+  background: var(--base-gray-100);
+  color: var(--base-gray-200);
+}
+
+.numberStepActive {
+  background: var(--produto-purple-light);
+  color: var(--base-white);
+}
+
+.numberStepDone {
+  background: var(--feedback-sucess-color);
+  color: var(--base-white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.id {
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.id + .title {
+  margin-right: 2.8125rem;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8rem;
+}
+
+.divider {
+  width: 528px;
+  height: 0px;
+
+  border: 1px solid var(--base-gray-100);
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
 }
