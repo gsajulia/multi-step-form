@@ -60,6 +60,7 @@ export const defaultSteps = [
     stepTitle: "Projeto",
     status: "todo",
     fields: [{
+      typeElement: "textarea",
       name: "goalProjects",
       value: "",
       type: "text",
