@@ -74,7 +74,7 @@ export default function Home() {
           <button className={styles.buttonPrevious} type="button" onClick={previousStep}>Voltar</button>
         )}
         {activeStepIndex === steps.length - 1 ? (
-          <button type="submit" onClick={onSubmit}>Concluir</button>
+          <button className={styles.buttonContinue} type="submit" onClick={onSubmit}>enviar proposta</button>
         ) : (
           <button className={styles.buttonContinue} type="button" onClick={nextStep}>Continuar</button>
         )}
