@@ -69,14 +69,16 @@ export default function Home() {
     <main className={styles.main}>
       <Header steps={steps} changeActiveStep={changeActiveStep} />
         <Step fields={fields[activeStepIndex]} onChangeField={onChangeField} />
+        <div className={styles.buttons}>
         {activeStepIndex !== 0 && (
-          <button type="button" onClick={previousStep}>Voltar</button>
+          <button className={styles.buttonPrevious} type="button" onClick={previousStep}>Voltar</button>
         )}
         {activeStepIndex === steps.length - 1 ? (
           <button type="submit" onClick={onSubmit}>Concluir</button>
         ) : (
-          <button type="button" onClick={nextStep}>Continuar</button>
+          <button className={styles.buttonContinue} type="button" onClick={nextStep}>Continuar</button>
         )}
+        </div>
     </main>
   );
 }
