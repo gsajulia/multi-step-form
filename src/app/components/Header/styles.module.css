@@ -23,6 +23,8 @@
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2.5rem;
 }
 
@@ -58,4 +60,22 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
+}
+
+@media screen and (max-width: 650px) {
+  .id + .title {
+    margin-right: 0.8rem;
+  }
+
+  .divider {
+    width: 80dvw;
+  }
+
+  .title {
+    margin-right: 0px;
+  }
+
+  .steps {
+    gap: 1.5rem;
+  }
 }
